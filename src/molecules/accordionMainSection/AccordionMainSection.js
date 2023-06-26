@@ -6,9 +6,9 @@ const AccordionMainSection = ({ mainSection }) => {
         <div>
             {mainSection.map(({ text, div, id }) => <div key={id} className={`mt-3`}>
                 <div
-                    className={`flex justify-between font-["VT323"] text-[white] text-[2.2vw] md:text-[24px] 2xl:text-[34px]`}>
+                    className={`flex justify-between font-["VT323"] text-[white] text-[2.2vw] md:text-[24px] 2xl:text-[34px] mt-7`}>
                     <span >
-                        {text}
+                        {text.toUpperCase()}
                     </span>
                     <span onClick={() => {
                         setOpenMainText({ ...openMainText, [id]: !openMainText[id] })
