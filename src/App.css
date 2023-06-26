@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@font-face {
+  font-family: "Upheaval TT (BRK)";
+  src: url("../src/assets/fonts/upheaval-tt-brk/upheavtt.ttf")
+    format("truetype");
+}
+
+.logo-text {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black, -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black,
+    3px 3px 0 black;
+}
+
+.left-bottom-shadow {
+  text-shadow: -1px 1px 0 black, -2px 2px 0 black, -3px 3px 0 black,
+    -4px 4px 0 black, -5px 5px 0 black, -6px 6px 0 black, -7px 7px 0 black,
+    -8px 8px 0 black, -9px 9px 0 black, -10px 10px 0 black;
+}
+
+.right-bottom-shadow {
+  text-shadow: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black,
+    4px 4px 0 black, 5px 5px 0 black, 6px 6px 0 black, 7px 7px 0 black,
+    8px 8px 0 black, 9px 9px 0 black, 10px 10px 0 black;
+}
+
+.gradient-outline-brown {
+  color: transparent;
+  text-shadow: -1px -1px 0 #fe9710, 3px 3px 0 #561510, 1px -1px 0 #561510,
+    -1px 1px 0 #561510, 1px 1px 0 #561510, -2px -2px 0 #561510,
+    2px -2px 0 #561510, -2px 2px 0 #561510, 2px 2px 0 #561510,
+    -3px -3px 0 #561510, 3px -3px 0 #561510, -3px 3px 0 #561510,
+    -5px 6px 0 black;
+}
+
+.gradient-outline-brown-light {
+  color: transparent;
+  text-shadow: -1px -1px 0 #f1d291, 3px 3px 0 #561510, 1px -1px 0 #561510,
+    -1px 1px 0 #561510, 1px 1px 0 #561510, -2px -2px 0 #561510,
+    2px -2px 0 #561510, -2px 2px 0 #561510, 2px 2px 0 #561510,
+    -3px -3px 0 #561510, 3px -3px 0 #561510, -3px 3px 0 #561510,
+    -5px 6px 0 black;
+}
+
+.gradient-outline-brown-dull {
+  color: transparent;
+  text-shadow: -1px -1px 0 #e4af3d, 3px 3px 0 #561510, 1px -1px 0 #561510,
+    -1px 1px 0 #561510, 1px 1px 0 #561510, -2px -2px 0 #561510,
+    2px -2px 0 #561510, -2px 2px 0 #561510, 2px 2px 0 #561510,
+    -3px -3px 0 #561510, 3px -3px 0 #561510, -3px 3px 0 #561510,
+    -5px 6px 0 black;
+}
+
+.main-section {
+  background: linear-gradient(180deg, #284407 0%, #4c6b06 41.15%, #729a3e 100%);
+}
+
+.summon-btn-rewards {
+  filter: drop-shadow(-4px 4px 0px #000000);
+}
+
+.summon-btn-rewards:hover {
+  background: linear-gradient(180deg, #ffedd9 0%, #e3b743 46.88%, #f85900 100%);
+  box-shadow: -4px 4px 0px #000000;
+}
+
+.summon-btn-wallet {
+  background: linear-gradient(180deg, #ffedd9 0%, #e3b743 46.88%, #f85900 100%);
+  box-shadow: -4px 4px 0px #000000;
+}
+.summon-btn-wallet:hover {
+  background: transparent;
+}
+
+.summon-btn-wallet-text-shadow {
+  text-shadow: 1px 1px 2px #000;
+}
+
+.pixel-profit-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 201, 162, 0) 0%,
+    rgba(164, 91, 23, 0.6) 54.69%,
+    rgba(66, 17, 7, 0.6) 100%
+  );
+}
+
+.summon-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 245, 192, 0) 0%,
+    rgba(104, 63, 25, 0.3) 62.5%,
+    #331f00 100%
+  );
+}
+
+.nft-page-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(162, 255, 249, 0) 0%,
+    rgba(25, 90, 104, 0.318) 62.5%,
+    rgba(0, 50, 61, 0.6) 100%
+  );
+}
+
+.staking-pool-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(42, 162, 147, 0) 0%,
+    rgba(20, 125, 106, 0.3) 62.5%,
+    #08484d 100%
+  );
+}
+
+.knights-nft-btn {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 154, 2, 0.9) 0%,
+      rgba(52, 31, 0, 0) 100%
+    ),
+    #7c0000;
+}
+
+.main-section-knights-nft {
+  background: linear-gradient(180deg, #0f2c39 0%, #16313f 49.48%, #44455f 100%);
+}
+
+.first-play-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 245, 192, 0) 0%,
+    rgba(104, 63, 25, 0.3) 62.5%,
+    #331f00 100%
+  );
+}
+
+.main-first-play-bg {
+  background: linear-gradient(0deg, #c5aa56 0%, #896f1e 46.35%, #372203 100%);
+}
+
+.earn-dream-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(162, 255, 249, 0) 0%,
+    rgba(25, 90, 104, 0.318) 62.5%,
+    rgba(0, 50, 61, 0.6) 100%
+  );
+}
+
+.hero-earn-dream-bg {
+  background: linear-gradient(180deg, #0f3f48 0%, #296f7c 49.48%, #4a938c 100%);
+}
+
+.main-staking-pool-bg {
+  background: linear-gradient(0deg, #0e2728 0%, #1f342f 46.35%, #09494d 100%);
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .right-bottom-shadow {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black, -2px 2px 0 black, 0px 4px 0 black, 2px 2px 0 black;
+  }
+  .gradient-outline-brown {
+    color: transparent;
+    text-shadow: -1px -1px 0 #fe9710, 3px 3px 0 #561510, 1px -1px 0 #561510,
+      -1px 1px 0 #561510, 1px 1px 0 #561510, -2px -2px 0 #561510,
+      2px -2px 0 #561510, -2px 2px 0 #561510, 2px 2px 0 #561510,
+      -3px -3px 0 #561510, 3px -3px 0 #561510, -3px 3px 0 #561510,
+      -5px 3px 0 black;
+  }
+  .gradient-outline-brown-light {
+    color: transparent;
+    text-shadow: -1px -1px 0 #f1d291, 3px 3px 0 #561510, 1px -1px 0 #561510,
+      -1px 1px 0 #561510, 1px 1px 0 #561510, -2px -2px 0 #561510,
+      2px -2px 0 #561510, -2px 2px 0 #561510, 2px 2px 0 #561510,
+      -3px -3px 0 #561510, 3px -3px 0 #561510, -3px 3px 0 #561510,
+      -5px 3px 0 black;
+  }
+
+  .gradient-outline-brown-dull {
+    color: transparent;
+    text-shadow: -1px -1px 0 #e4af3d, 3px 3px 0 #561510, 1px -1px 0 #561510,
+      -1px 1px 0 #561510, 1px 1px 0 #561510, -2px -2px 0 #561510,
+      2px -2px 0 #561510, -2px 2px 0 #561510, 2px 2px 0 #561510,
+      -3px -3px 0 #561510, 3px -3px 0 #561510, -3px 3px 0 #561510,
+      -5px 3px 0 black;
+  }
+}
