@@ -4,7 +4,7 @@ import React from 'react'
 import { mainEarnDreamData } from '../../data/mainEarnDreamData/MainEarnDreamData'
 
 // svh
-import PotionBottle from '../../assets/images/home/PotionBottle.svg'
+import PotionBottle from '../../assets/images/home/PotionBottle.gif'
 
 const MainEarnDream = () => {
 

@@ -8,12 +8,12 @@ export const mainSection = [
     {
         id:1,
         text: 'When is the mint?',
-        div: <div>The mint date will be announced on Twitter. Click <span className='text-[#F2994A]'>here</span> to follow.</div>
+        div: <div>The mint date will be announced on Twitter. Click <span className='text-[#F2994A] cursor-pointer '>here</span> to follow.</div>
     },
     {
         id:2,
         text: 'How do I get on the Allowlist/Whitelist?',
-        div: <div>Pixel Quest is the world’s first play-to-mint NFT project. To get on the Allowlist, simply play <span className='text-[#F2994A]'>ETH & Arrow</span> [Links to game download] with enough skill to earn a spot.</div>
+        div: <div>Pixel Quest is the world’s first play-to-mint NFT project. To get on the Allowlist, simply play <span className='text-[#F2994A] cursor-pointer'>ETH & Arrow</span> [Links to game download] with enough skill to earn a spot.</div>
     },
     {
         id:3,
@@ -44,6 +44,6 @@ export const mainSection = [
     {
         id:8,
         text: 'How will revenue be used to continue the project?',
-        div: <div>100% of revenue from royalties and the platform will go to recouping development costs, additional marketing, and continued game development on Eth & Arrow <span className='text-[#F2994A]'>other new games</span>.</div>
+        div: <div>100% of revenue from royalties and the platform will go to recouping development costs, additional marketing, and continued game development on Eth & Arrow <span className='text-[#F2994A] cursor-pointer'>other new games</span>.</div>
     },
 ]

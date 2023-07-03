@@ -1,7 +1,7 @@
 import React from 'react'
 
 // svg
-import shotMan from '../../assets/images/home/shotMan.svg'
+import shotMan from '../../assets/images/home/shotMan.gif'
 
 const MainFirstPlay = () => {
     return (
@@ -14,9 +14,12 @@ const MainFirstPlay = () => {
                 slimes to your team and shoot down your opponents. Dashing, parrying, and fast-paced
                 marksmanship make the game a heart-pumping challenge
             </p>
-            <div className='w-[181px] h-[204px] mb-[6%]'>
-            <img className='w-full h-full' src={shotMan} alt="" />
+            <div className='w-[133px] h-[117px] md:w-[291px] md:h-[204px]  mb-[6%] '>
+                <img className='w-full h-full object-cover' src={shotMan} alt="" />
             </div>
+            {/* <div className='w-[291px] h-[204px] mb-[6%]'>
+            <img className='w-full h-full object-cover' src={shotMan} alt="" />
+            </div> */}
         </div>
     )
 }

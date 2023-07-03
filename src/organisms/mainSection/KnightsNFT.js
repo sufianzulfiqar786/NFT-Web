@@ -1,7 +1,7 @@
 import React from 'react'
 
 // svg
-import dashCharacter from '../../assets/images/home/dashCharacter.svg'
+import dashCharacter from '../../assets/images/home/dashCharacter.gif'
 
 const MainSectionKnightsNFT = () => {
   return (
@@ -10,7 +10,7 @@ const MainSectionKnightsNFT = () => {
         Passive income
       </p>
       <p className='text-[white] hover:text-[#F2994A] text-center w-[80%] md:w-[35%] font-["VT323"] sm:text-[24px] 2xl:text-[34px] pt-[1.3%] transition ease-in-out duration-500'>
-        Staking enables shared OpenSea royalties, shared game platform fees, and deflationary value for the collection. <span className='text-[#F2994A] hover:text-[white] transition ease-in-out duration-500'>Learn more</span>.
+        Staking enables shared OpenSea royalties, shared game platform fees, and deflationary value for the collection. <span className='text-[#F2994A] hover:text-[white] transition ease-in-out duration-500 cursor-pointer'>Learn more</span>.
       </p>
       <div className='w-[113px] sm:w-[153px] 2xl:w-[283px] h-[117px] sm:h-[157px] 2xl:h-[287px] my-[7%]'>
         <img className='w-full h-full object-cover' src={dashCharacter} alt="" />

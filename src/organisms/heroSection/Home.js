@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 // video
-import AnimLandingPage from '../../assets/images/home/AnimLandingPage.mp4';
+import AnimLandingPage from '../../assets/images/home/AnimLandingPage.gif';
 
 // components
 import Logo from '../../molecules/logo/Logo';
@@ -9,20 +9,27 @@ import MenuWrapper from '../../molecules/menuWrapper/MenuWrapper';
 import FreeMinutes from '../../molecules/freeMinutes/FreeMinutes';
 import VideoLoader from '../../atom/videoLoader/VideoLoader';
 
-const HeroSection = () => {
-  const [videoLoaded, setVideoLoaded] = useState(false);
+const HeroSection = ({ videoLoaded, setVideoLoaded }) => {
 
   return (
     <div className="relative">
       {!videoLoaded &&
         <VideoLoader />
       }
-      <video autoPlay muted loop src={AnimLandingPage}
+      {/* <video
+        controls={false}
+        autoPlay
+        muted
+        loop 
+        src={AnimLandingPage}
         className={`w-full ${videoLoaded ? '' : 'hidden'}`}
         onLoadedData={() => setVideoLoaded(true)}
-      />
+      /> */}
+      <div className='w-full xl:h-[145vh]'>
+        <img className={`w-full h-full object-cover ${videoLoaded ? '' : 'hidden'}`} src={AnimLandingPage} alt="" onLoad={() => setVideoLoaded(true)} />
+      </div>
       {videoLoaded && <div className={`absolute w-full top-[22%] ${videoLoaded ? '' : 'hidden'}`}>
-        <div>
+        <div className='xl:mt-[-5%]'>
           <Logo width="30vw" fontSize="2.2vw" />
           <MenuWrapper />
           <FreeMinutes />

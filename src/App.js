@@ -8,6 +8,7 @@ import twitter from './assets/images/home/twitter.svg'
 // components
 import Footer from './organisms/footer/Footer';
 import VideoLoader from './atom/videoLoader/VideoLoader';
+import ScrollToTop from './atom/scrollToTop/ScrollToTop';
 
 // components(React.lazy)
 const Home = React.lazy(() => import('./pages/home/Home'))
@@ -23,18 +24,19 @@ function App() {
   return (
     <BrowserRouter>
       <Suspense fallback={<VideoLoader />}>
-        <div className='fixed right-5 md:right-10 top-5 md:top-10 z-20 w-[38px] md:w-[48px] h-[38px] md:h-[48px] '>
+        <div className='fixed right-5 md:right-10 top-5 md:top-10 cursor-pointer z-20 w-[38px] md:w-[48px] h-[38px] md:h-[48px] '>
           <img className='w-full h-full object-cover ' src={twitter} alt="" />
         </div>
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/pixeltoprofits" element={<PixelToProfits />} />
-          <Route path="/summon" element={<Summon />} />
-          <Route path="/knightsnft" element={<KnightsNFT />} />
-          <Route path="/firstplay" element={<FirstPlay />} />
-          <Route path="/earndream" element={<EarnDream />} />
-          <Route path="/stakingpool" element={<StakingPool />} />
+          <Route path="/unique-p2e" element={<PixelToProfits />} />
+          <Route path="/mint-page" element={<Summon />} />
+          <Route path="/knights-nft" element={<KnightsNFT />} />
+          <Route path="/get-allowlisted" element={<FirstPlay />} />
+          <Route path="/passive-income" element={<EarnDream />} />
+          <Route path="/staking-pool" element={<StakingPool />} />
         </Routes>
         <Footer />
       </Suspense>

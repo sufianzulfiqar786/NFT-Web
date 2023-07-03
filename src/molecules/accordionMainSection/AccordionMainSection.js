@@ -6,19 +6,21 @@ const AccordionMainSection = ({ mainSection }) => {
         <div>
             {mainSection.map(({ text, div, id }) => <div key={id} className={`mt-3`}>
                 <div
-                    className={`flex justify-between font-["VT323"] text-[white] text-[2.2vw] md:text-[24px] 2xl:text-[34px] mt-7`}>
-                    <span >
+                    className={`flex justify-between font-["VT323"] text-[white] sm:text-[2.2vw] md:text-[24px] 2xl:text-[34px] mt-7`}>
+                    <span className='cursor-pointer' onClick={() => {
+                        setOpenMainText({ ...openMainText, [id]: !openMainText[id] })
+                    }}>
                         {text.toUpperCase()}
                     </span>
-                    <span onClick={() => {
+                    <span className='cursor-pointer' onClick={() => {
                         setOpenMainText({ ...openMainText, [id]: !openMainText[id] })
                     }}
                     >
-                        {openMainText[id] ? '+' : '-'}
+                        {!openMainText[id] ? '+' : '-'}
                     </span>
                 </div>
                 {openMainText[id] ? <div
-                    className='w-[95%] font-["VT323"]  text-[white] text-[2.2vw] md:text-[24px] 2xl:text-[34px] leading-0 '>
+                    className='w-[95%] font-["VT323"]  text-[white] sm:text-[2.2vw] md:text-[24px] 2xl:text-[34px] leading-0 '>
                     <span> {div} </span>
                 </div> : null}
                 <hr className='mt-[1%]' />
