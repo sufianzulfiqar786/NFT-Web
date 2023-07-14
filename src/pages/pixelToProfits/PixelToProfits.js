@@ -5,20 +5,14 @@ import PixelToProfit from "../../assets/images/home/PixelToProfit.gif";
 
 // component
 import VideoLoader from '../../atom/videoLoader/VideoLoader';
-import ScrollToTop from '../../atom/scrollToTop/ScrollToTop';
 
 const PixelToProfits = () => {
     const [videoLoaded, setVideoLoaded] = useState(false);
-    const scrollOffset = window.innerWidth >= 600 ? 18 : 0;
     return (
-        <div className="relative  ">
-            {/* <ScrollToTop top={scrollOffset}/> */}
+        <div className="relative  flex items-center">
             {!videoLoaded &&
                 <VideoLoader />
             }
-            {/* <video controls={false} autoPlay muted loop src={PixelToProfit}
-                className={`w-full ${videoLoaded ? '' : 'hidden'}`}
-                onLoadedData={() => setVideoLoaded(true)} /> */}
             <div className='w-full xl:h-[100vh]' >
                 <img className={`w-full h-full ${videoLoaded ? '' : 'hidden'}`} src={PixelToProfit} alt="" onLoad={() => setVideoLoaded(true)} />
             </div>

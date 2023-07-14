@@ -12,9 +12,6 @@ const HeroEarnDream = ({videoLoaded, setVideoLoaded}) => {
             {!videoLoaded &&
                 <VideoLoader />
             }
-            {/* <video controls={false} autoPlay muted loop src={AnimPassiveIncome}
-                className={`w-full ${videoLoaded ? '' : 'hidden'}`}
-                onLoadedData={() => setVideoLoaded(true)} /> */}
                 <div className='w-full xl:h-[100vh]'>
                 <img className={`w-full h-full object-cover ${videoLoaded ? '' : 'hidden'}`} src={AnimPassiveIncome} alt="" onLoad={() => setVideoLoaded(true)} />
             </div>

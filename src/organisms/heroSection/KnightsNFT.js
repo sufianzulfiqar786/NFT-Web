@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 // video
 import NFTPage from "../../assets/images/home/NFTPage.gif";
@@ -12,16 +12,13 @@ import { knightsNFTData } from '../../data/knightsNFTData/KnightsNFTData'
 // component
 import VideoLoader from '../../atom/videoLoader/VideoLoader';
 
-const HeroSectionKnightsNFT = ({videoLoaded, setVideoLoaded}) => {
+const HeroSectionKnightsNFT = ({ videoLoaded, setVideoLoaded }) => {
     return (
         <div className="relative">
             {!videoLoaded &&
                 <VideoLoader />
             }
-            {/* <video controls={false} autoPlay muted loop src={NFTPage}
-                className={`w-full ${videoLoaded ? '' : 'hidden'}`}
-                onLoadedData={() => setVideoLoaded(true)} /> */}
-                <div className='w-full xl:h-[125vh]'>
+            <div className='w-full xl:h-[125vh]'>
                 <img className={`w-full h-full object-cover ${videoLoaded ? '' : 'hidden'}`} src={NFTPage} alt="" onLoad={() => setVideoLoaded(true)} />
             </div>
             {videoLoaded && <>

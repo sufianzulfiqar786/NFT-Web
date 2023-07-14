@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 // video
 import StakingPoolAnimated from "../../assets/images/home/StakingPoolAnimated.gif";
@@ -12,9 +12,6 @@ const HeroStakingPool = ({ videoLoaded, setVideoLoaded }) => {
             {!videoLoaded &&
                 <VideoLoader />
             }
-            {/* <video controls={false} autoPlay muted loop src={StakingPoolAnimated}
-                className={`w-full ${videoLoaded ? '' : 'hidden'}`}
-                onLoadedData={() => setVideoLoaded(true)} /> */}
             <div className='w-full xl:h-[120vh]'>
                 <img className={`w-full h-full object-cover ${videoLoaded ? '' : 'hidden'}`} src={StakingPoolAnimated} alt="" onLoad={() => setVideoLoaded(true)} />
             </div>

@@ -23,7 +23,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Suspense fallback={<VideoLoader />}>
+      <Suspense  fallback={<VideoLoader />}>
         <div className='fixed right-5 md:right-10 top-5 md:top-10 cursor-pointer z-20 w-[38px] md:w-[48px] h-[38px] md:h-[48px] '>
           <img className='w-full h-full object-cover ' src={twitter} alt="" />
         </div>
@@ -38,7 +38,7 @@ function App() {
           <Route path="/passive-income" element={<EarnDream />} />
           <Route path="/staking-pool" element={<StakingPool />} />
         </Routes>
-        <Footer />
+        <Footer/>
       </Suspense>
     </BrowserRouter>
   );

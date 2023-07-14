@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 
 // video
 import AnimLandingPage from '../../assets/images/home/AnimLandingPage.gif';
@@ -16,17 +16,8 @@ const HeroSection = ({ videoLoaded, setVideoLoaded }) => {
       {!videoLoaded &&
         <VideoLoader />
       }
-      {/* <video
-        controls={false}
-        autoPlay
-        muted
-        loop 
-        src={AnimLandingPage}
-        className={`w-full ${videoLoaded ? '' : 'hidden'}`}
-        onLoadedData={() => setVideoLoaded(true)}
-      /> */}
       <div className='w-full xl:h-[145vh]'>
-        <img className={`w-full h-full object-cover ${videoLoaded ? '' : 'hidden'}`} src={AnimLandingPage} alt="" onLoad={() => setVideoLoaded(true)} />
+        <img className={`w-full h-full object-cover ${videoLoaded ? '' : 'hidden'}`} src={AnimLandingPage} alt="animLandingage" onLoad={() => setVideoLoaded(true)} />
       </div>
       {videoLoaded && <div className={`absolute w-full top-[22%] ${videoLoaded ? '' : 'hidden'}`}>
         <div className='xl:mt-[-5%]'>

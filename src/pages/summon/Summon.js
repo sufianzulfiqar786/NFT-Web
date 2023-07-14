@@ -5,20 +5,14 @@ import SummonVideo from "../../assets/images/home/Summon.gif";
 
 // component
 import VideoLoader from '../../atom/videoLoader/VideoLoader';
-import ScrollToTop from '../../atom/scrollToTop/ScrollToTop';
 
 const Summon = () => {
     const [videoLoaded, setVideoLoaded] = useState(false);
-    const scrollOffset = window.innerWidth >= 600 ? 20 : 0;
     return (
         <div className="relative">
-            {/* {videoLoaded && <ScrollToTop top={scrollOffset}/>} */}
             {!videoLoaded &&
                 <VideoLoader />
             }
-            {/* <video controls={false} autoPlay muted loop src={SummonVideo}
-                className={`w-full ${videoLoaded ? '' : 'hidden'}`}
-                onLoadedData={() => setVideoLoaded(true)} /> */}
             <div className='w-full xl:h-[110vh]'>
                 <img className={`w-full h-full object-cover ${videoLoaded ? '' : 'hidden'}`} src={SummonVideo} alt="" onLoad={() => setVideoLoaded(true)} />
             </div>
