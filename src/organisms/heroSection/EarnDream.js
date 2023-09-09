@@ -6,13 +6,13 @@ import AnimPassiveIncome from "../../assets/images/home/AnimPassiveIncome.gif";
 // component
 import VideoLoader from '../../atom/videoLoader/VideoLoader';
 
-const HeroEarnDream = ({videoLoaded, setVideoLoaded}) => {
+const HeroEarnDream = ({ videoLoaded, setVideoLoaded }) => {
     return (
         <div className="relative  ">
             {!videoLoaded &&
                 <VideoLoader />
             }
-                <div className='w-full xl:h-[100vh]'>
+            <div className='w-full xl:h-[100vh]'>
                 <img className={`w-full h-full object-cover ${videoLoaded ? '' : 'hidden'}`} src={AnimPassiveIncome} alt="" onLoad={() => setVideoLoaded(true)} />
             </div>
             {videoLoaded && <div className="earn-dream-bg absolute w-full h-full top-[0%] flex justify-center items-center flex-col ">
